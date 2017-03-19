@@ -6,7 +6,6 @@ def to_rna(dna):
             'A': 'U'
             }
     try:
-        rna = ''.join([d[e] for e in dna])
-        return rna
+        return ''.join([d[e] for e in dna])
     except KeyError:
         return ''
