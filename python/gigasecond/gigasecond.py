@@ -1,6 +1,7 @@
 import datetime
 
+UNIT = 1000000000
+
 
 def add_gigasecond(base_date):
-    gs = datetime.timedelta(seconds=1000000000)
-    return base_date + gs
+    return base_date + datetime.timedelta(seconds=UNIT)
